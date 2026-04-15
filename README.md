@@ -3,13 +3,21 @@
 ## Made a cool visualisation tool to view the prefix tree and Auto-completion
 *Auto-Completion Coming soon!!*
 ## Quick Start
+### Installation
 mac
 ```console
-$ brew install graphviz
+brew install graphviz
 ```
 Linux
 ```console
-$ sudo apt install graphviz
+sudo apt install graphviz
+```
+### Usage
+```console
+git clone https://github.com/priyanshu-matrix/PrefixTree.git
+cd PrefixTree
+chmod +x build.sh
+./build.sh
 ```
 
 ## References
