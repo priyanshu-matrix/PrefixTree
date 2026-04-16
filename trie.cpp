@@ -32,7 +32,7 @@ void print(TrieNode* root, int par, ofstream& file) {
     if (!root) return;
     for (int i = 0; i < 26; i++) {
         if (root->children[i]) {
-            int childID = (par * 26) + i + 1;
+            unsigned int childID = ((par * 26) + i + 1);
             file << "  Node" << par << " -> Node" << childID 
                  << " [label=\"" << char(i + 'a') << "\", weight=\"" << char(i + 'a') << "\"];\n";
             print(root->children[i], childID, file);
@@ -55,7 +55,7 @@ int main() {
         myFile << "}\n";
         myFile.close();
     } else {
-        cout << "lode lg gye" << endl;
+        cout << "Some error occoured while opening the file" << endl;
     }
 
     return 0;
